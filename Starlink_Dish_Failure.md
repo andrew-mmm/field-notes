@@ -4,7 +4,7 @@ layout: default
 
 # Starlink Offline - Faulty Dish Isolation
 
-**Date:** 2026-08-31 → 2026-09-01
+**Date:** 2026-08-31 – 2026-09-01
 **Timeline:** day 1 – on-site diagnosis | day 2 – dish swap & service restoration
 **Environment:** Residential Multi-Room Outside Balcony
 **Technician:** Andrew Moe Myint Maung
