@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Starlink Offline - Faulty Dish Isolation
 
 **Date:** 2026-08-31 -- 2026-09-01 <br>
