@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Troubleshooting Portfolio — [Andrew Moe Myint Maung]
 
 Hands-on field documentation. No certs, just solved problems.
