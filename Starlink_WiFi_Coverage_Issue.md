@@ -47,7 +47,7 @@ Apply a low-risk, immediate improvement using only existing equipment. No unauth
 - Comparative device-to-router and device-to-internet tests at the router location versus the far-room bed area on both 5 GHz and 2.4 GHz.
 - Channel optimization is not possible on this hardware.
 
-# 6.1. Evidence
+# 5.1. Evidence
 
 All tests performed during the same investigation window. Results are point-in-time and subject to Starlink’s normal variability.
 
@@ -64,16 +64,16 @@ All tests performed during the same investigation window. Results are point-in-t
 | Gateway ICMP                      | No loss during test          | Local gateway stable                     |
 | Public IP / Hostname ICMP         | Minor loss, variable latency | WAN variation normal; DNS functional     |
 
-## 6.2 Physical Observations
+## 5.2 Physical Observations
 
 Since the specific router only has two ports with no external devices connected physically, and the physical node was never located - the phantom mesh node can be ruled out as a software glitch.
 
-## 7. Action & Outcome
+## 6. Action & Outcome
 
 - **Immediate low-risk change:** separated the 2.4 GHz and 5 GHz SSIDs. Distant users were directed to the longer-range 2.4 GHz network, and devices near the router remained on 5 GHz.
 - **Initial user feedback and follow-up testing:** indicated improved stability. The remaining coverage limitation was documented, along with the unresolved “pending mesh node” status in the Starlink app.
 
-## 8. What Was Deliberately Not Done
+## 7. What Was Deliberately Not Done
 
 - Did not change the Wi-Fi password without evidence or owner authorisation.
 - Did not claim DNS/DHCP failure without isolating symptoms.
@@ -81,6 +81,6 @@ Since the specific router only has two ports with no external devices connected 
 - Did not place a mesh solution inside a dead zone without confirming strong backhaul.
 - Did not treat anecdotal reports as confirmed network evidence.
 
-## 9. Closing Note
+## 8. Closing Note
 
 A healthy WAN speed test proves nothing about the user’s experience. Measuring device-to-router throughput at the actual location of complaint isolated the local Wi-Fi coverage as the immediate fault. The phantom mesh node message has been ruled out as an app error. Client complaints ceased after the band split. The architecture is still a single router covering a linear building, but the immediate problem is resolved. Can be improved by installing a mesh node or an access point, but until clients continue experiencing the same problem and if management approves, no changes will be made.
