@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Intermittent Wi-Fi in a Multi-Room Starlink Residential Network
 
 **Date:** 2026-08-18 <br>
