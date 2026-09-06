@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Troubleshooting Portfolio
 ## Andrew Moe Myint Maung
 
