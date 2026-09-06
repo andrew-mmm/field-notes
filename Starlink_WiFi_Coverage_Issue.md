@@ -16,9 +16,8 @@ Users reported intermittent connectivity and suspected a compromised Wi-Fi passw
 A six-room residential property using a single Starlink Gen 2 wireless router positioned at the centre of a linear building. Approximately 18 client devices were connected (assumption: ~3 devices per room).
 **Physical layout (linear):** 
 
+							  Starlink Gen 2 router
 	    [ Room 6  |  Room 5  |  Room 4  |  Room 3  |  Room 2  |  Room 1 ]
-					                ↑ 
-                            Starlink Gen 2 router
                                                                            
 Starlink app status at time of investigation: “The mesh node is currently connecting to your network.” No physical mesh node was located on site. Whether this is a genuine pending node or an application layer glitch remained unconfirmed.
 
