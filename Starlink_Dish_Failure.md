@@ -25,7 +25,7 @@ Starlink service at a residential Units went offline. The Starlink app showed a 
 | Original Dish    | No link with original or spare cable                 | Faulty                |
 | Starlink Service | Other terminals online                               | Not a regional outage |
 
-## 4. Diagnosis
+## 4. Diagnosis & Observation
 ### 4.1 On-Site Network Tests
 
 The first things I noticed when I got to the Units were:
@@ -62,6 +62,7 @@ The original Starlink dish was faulty. It failed to establish a usable link even
 - Dish mount stability was poor (visible wobble in wind). While it might not be the primary cause of the outage, a loose mount might contribute to intermittent performance and should be addressed when the replacement dish is permanently installed.
 - Temporary testing was performed with the spare cable and dish on the balcony - final stable operation required clear sky view.
 - Both dishes are actuated (motorized) type.
+
 ## 9. Closing Note
 
 The local network and router were never the problem. The failure was isolated to the original mounted dish through systematic testing and substitution. Once a working dish was connected and given a clear sky view, service returned and the original cable was confirmed good.
