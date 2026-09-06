@@ -4,31 +4,31 @@ layout: default
 # Faulty Cable Isolation - Single Uplink Cable Failure Took Down Two Network Segments
 
 **Date:** 2026-07-15 <br>
-**Environment:** [Area-2] and [Area-1] Building <br>
+**Environment:** (Segment A) and (Segment B) <br>
 **Technician:** Andrew Moe Myint Maung
 
 ## 1. Executive Summary
 
-The entire [Area-2] and the [Area-1] lost network connectivity at the same time. The issue was a faulty ethernet cable connection between the Core Layer and the Distribution Layer Switch - affecting all devices connected to the Access Layer Switch.
+Two network segments lost connectivity simultaneously. The issue was a single uplink cable failure between two switching layers - cascading to all downstream devices.
 
 ## 2. The Scenario
 
-**Simplified topology:** Router -> Distribution Switch [Area-1] -> Access Switch [Area-2]
+**Simplified topology:** Core device → Distribution switch (Segment A) → Access switch (Segment B)
 
-The [Area-2] switch depended entirely on the [Area-1] switch for its uplink. A failure on the single cable between the Router and the [Area-1] switch took both segments offline.
+The Segment B switch depended entirely on the Segment A switch for its uplink. A failure on the single cable between the core device and the Segment A switch took both segments offline.
 
 ## 3. Physical Observations
 
-- **[Area-1] switch:** powered on, all port lights blinking rapidly and simultaneously.
-- **[Area-2] switch:** same behaviour - power present, all lights blinking fast in sync.
-- **Router port linked to the [Area-1] switch:** link lights off, but comes back on when plugged in with a working spare cable.
+- **Upstream switch:** powered on, all port lights blinking rapidly in sync.
+- **Downstream switch:** same behaviour - power present, all lights blinking fast in sync.
+- **Core device uplink port:** link lights off, but comes back on when plugged in with a working spare cable.
 
 ## 4. Diagnosis
 
 The rapid synchronised blinking on both switches with power present is consistent with devices that have no valid uplink and are continuously searching or cycling link state, or a broadcast storm.
 
-- **Action taken at the Router:** the existing cable was unplugged and a known-good test cable was plugged into the same port - link lights came up immediately.
-- **Conclusion:** the original cable between the Router and the [Area-1] switch had failed. The switches themselves were not the primary fault. Can rule out broadcast storms.
+- **Action taken at the uplink port:** the existing cable was unplugged and a known-good test cable was plugged into the same port - link lights came up immediately.
+- **Conclusion:** the original cable between the core device and the Segment A switch had failed. The switches themselves were not the primary fault. Can rule out broadcast storms.
 
 ## 5. Immediate Resolution
 
@@ -36,9 +36,9 @@ Requested maintenance to replace the failed cable. Once the new cable was instal
 
 ## 6. Proposed Improvement
 
-I proposed running a second ethernet cable from the Router to the [Area-1] switch to serve as an unplugged cold standby (an effective but less technical alternative). In the event of another primary cable failure, the spare would be connected immediately, reducing downtime while a permanent replacement was arranged. 
+I proposed running a second unplugged uplink cable as a cold standby between the segments (an effective but less technical alternative). In the event of another primary cable failure, the spare would be connected immediately, reducing downtime while a permanent replacement was arranged. 
 
-Recognised downside: an idle cable in the same physical path could be damaged by rodents or other environmental factors before it was ever needed. This was a low-cost, low-complexity redundancy measure aimed at reducing mean time to recovery (MTTR).
+Recognised downside: an idle cable in the same physical path could be degraded by environmental factors before it was ever needed. This was a low-cost, low-complexity redundancy measure aimed at reducing mean time to recovery (MTTR).
 
 However, I was instead advised to armor / better protect the existing (replacement) cable to reduce the likelihood of future physical damage. The chosen approach prioritised improving mean time between failures (MTBF) of the single path over adding a rapid-recovery spare.
 
