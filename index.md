@@ -4,7 +4,7 @@ layout: default
 # Troubleshooting Portfolio
 ## Andrew Moe Myint Maung
 
-Hands-on field documentation. No certs, just solved problems.
+Hands-on field documentation. IT support tech, 10 months in, no certs, just solved problems.
 
 - [Troubleshooting Starlink Dish Failure](Starlink_Dish_Failure.md)
 - [Troubleshooting Starlink Wifi Coverage Issue](Starlink_WiFi_Coverage_Issue.md)
