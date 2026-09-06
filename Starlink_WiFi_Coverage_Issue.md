@@ -26,8 +26,7 @@ Starlink app status at time of investigation: “The mesh node is currently conn
 
 - Work performed off-site during a single two-hour window on company time at the request of management.
 - Visit occurred in the morning; normal evening client load was not present, so associated client count and airtime utilisation could not be meaningfully assessed.
-- The previous installer stated the deployment consisted only of the Starlink Gen 2 router and dish (no mesh node). 
-	- That individual has previously proven unreliable.
+- The previous installer stated the deployment consisted only of the Starlink Gen 2 router and dish (no mesh node) - no documentation exists for the original installation
 - Starlink app displays a pending mesh node with no available option to forget/remove.
 - Channel selection and advanced radio configuration are not accessible on the Gen 2 router hardware.
 
@@ -64,6 +63,7 @@ All tests performed during the same investigation window. Results are point-in-t
 | Far-room 2.4 GHz ↔ internet (bed) | 4 ↓ / 0.1 ↑ Mbps / 204 ms    | Poor real-world performance              |
 | Gateway ICMP                      | No loss during test          | Local gateway stable                     |
 | Public IP / Hostname ICMP         | Minor loss, variable latency | WAN variation normal; DNS functional     |
+
 ## 6.2 Physical Observations
 
 Since the specific router only has two ports with no external devices connected physically, and the physical node was never located - the phantom mesh node can be ruled out as a software glitch.
